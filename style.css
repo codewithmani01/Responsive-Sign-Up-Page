@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,
+body {
+  /* background-color: gainsboro; */
+  background-image: url(bg.jpg);
+  height: 100vh;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+.left_side {
+  background-color: #ffffff05;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(25px);
+  height: 100vh;
+  width: 35%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.signup_box {
+  color: black;
+  background-color: white;
+  height: 100vh;
+  width: 65vw;
+  border-radius: 15px;
+  padding-left: 50px;
+  padding-top: 20px;
+  position: relative;
+  overflow:auto;
+}
+.signup_box > h2{
+    font-size: 30px;
+}
+.signup_box >h6{
+    font-size: 12px;
+}
+.signup_box > .inputs{
+    font-size: 15px;
+    font-weight: 100;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(131, 129, 129);
+    height: 7vh;
+    width: 50vh;
+}
+.signup_box > .inputs::placeholder{
+    color: rgb(34, 33, 33);
+}
+select{
+    background-color: transparent;
+}
+#conditions{
+    margin-top: 10px;
+}
+.signup_btn{
+    background-color: #4C066A;
+    border: none !important;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    width: 40vw !important;
+}
+.signin{
+    text-align: center;
+    font-size: 12px !important;
+    margin-top: 10px;
+    font-weight: 100 !important;
+}
+.signin a{
+    text-align: center;
+    font-size: 12px !important;
+    margin-top: 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700 !important;
+}
+.ms{
+    display: flex;
+    position: relative;
+}
+.ms button{
+    /* margin-left: 20px; */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    cursor: pointer;
+    border: 1px solid rgb(131, 129, 129);
+    border-radius: 5px;
+}
+@media  screen and (min-width: 1024px) {
+    .signup_box > .inputs{
+        width: 60vh;
+    }
+    .signup_btn{
+        width: 55.5vw !important;
+    }
+    .signup_box >h6{
+        font-size: 15px;
+    }
+    .signin{
+        font-size: 16px !important;
+        width: 60vw;
+    }
+    .signin a{
+        font-size: 16px !important;
+        width: 60vw;
+    }
+    .ms_su{
+        margin-left: 30px ;
+    }
+    .go_su{
+        margin-left: 50px;
+    }
+}
+@media  screen and (min-width: 768px) and (max-width: 1023px){
+    .signup_box > .inputs{
+        width: 50vw;
+    }
+    .signup_btn{
+        width: 50vw !important;
+    }
+    .signup_box >h6{
+        font-size: 16px;
+    }
+    .signin{
+        font-size: 15px !important;
+    }
+    .signin a{
+        font-size: 15px !important;
+    }
+    .ms{
+        flex-direction: column !important;
+        width: 50vw !important;
+
+    }
+    .ms_su{
+        margin-left: 20px ;
+    }
+    .go_su{
+        margin-left: 20px;
+    }
+}
+@media  screen and (max-width: 767px){
+    .signup_box > .inputs{
+        width: 40vw;
+    }
+    .signup_btn{
+        width: 30vw !important;
+    }
+    .signup_box >h6{
+        font-size: 10px;
+    }
+    .signin{
+        text-align: justify;
+        font-size: 13px !important;
+    }
+    .signin a{
+        text-align: justify;
+        font-size: 13px !important;
+    }
+    .or{
+        text-align: justify;
+        margin-left: 80px !important;
+    }
+    .ms{
+        flex-direction: column !important;
+        width: 40vw !important;
+
+    }
+    .ms_su{
+        margin-left: 20px ;
+    }
+    .go_su{
+        margin-left: 20px;
+    }
+
+}
+@media  screen and (max-width: 400px) and (min-width: 490px){
+    .signup_box > .inputs{
+        width: 30vw;
+    }
+    .signup_btn{
+        width: 25vw !important;
+    }
+    .signup_box >h6{
+        font-size: 10px;
+    }
+    .ms{
+        flex-direction: column !important;
+        width: 30vw !important;
+    }
+    .ms_su{
+        margin-left: 15px ;
+    }
+    .go_su{
+        margin-left: 15px;
+    }
+}
